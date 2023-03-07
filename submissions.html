@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Submissions</title>
+  </head>
+  <body>
+    <h1>Form Submissions</h1>
+    <ul id="submissions-list"></ul>
+
+    <script>
+      const submissionsList = document.getElementById("submissions-list");
+
+      let submissions = localStorage.getItem("submissions");
+      if (submissions) {
+        submissions = JSON.parse(submissions);
+
+        for (let i = 0; i < submissions.length; i++) {
+          const submission = submissions[i];
+
+          const li = document.createElement("li");
+          li.textContent = `Name: ${submission.name}, Password: ${submission.password}`;
+          submissionsList.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>
