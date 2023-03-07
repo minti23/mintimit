@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi</title>
+  </head>
+  <body style="background-color: #23242a; height: 92vh; display: flex; flex-direction: column; flex:1; justify-content: center; align-items: center">
+    <h1 style="color: white; font-size: 28pt; font-family: 'FREDOKA ONE';">Hi: <span id="recent-name"></span></h1>
+    <p style="color: white; font-size: 16pt; font-family: 'UTM Duepuntozero'; ">
+      Hmm, đây là một cái idea nho nhỏ mà tui muốn làm để tặng "Mit" trong ngày Quốc tế Phụ nữ này á ❤❤❤.
+    </p>
+    <p style="color: white; font-size: 16pt; font-family: 'UTM Duepuntozero';">
+      Tuy cũng không có gì đặc biệt lắm nhưng hi vọng là có thể giúp "Mit" relax hơn cũng như happy trong ngày 8-3 này nhe.
+    </p>
+    <p style="color: white; font-size: 16pt; font-family: 'UTM Duepuntozero';"> 
+      Dưới đây cũng còn một vài thứ đáng iu nho nhỏ nữa á, khám phát hết nha 😉
+    </p>
+
+    <a style="color: white; font-size: 16pt; font-family: 'UTM Duepuntozero';">
+      ⭐Ở đây có gì nè⭐
+    </a>
+
+    
+    <audio src="guibanna.mp4" type="audio/mp4" controls>
+
+    </audio>
+    <p>
+
+    </p>
+    
+    <a
+      target="_blank"
+      href="thank-you.html"
+      style="text-decoration: none; color: white; font-size: 16pt; font-family: 'UTM Duepuntozero';"
+      >Đoán xem còn gì nữa hong 🔎</a
+    >
+    
+    <script>
+      const recentName = localStorage.getItem("recentName");
+      const recentNameElement = document.getElementById("recent-name");
+
+      if (recentName) {
+        recentNameElement.textContent = recentName;
+      }
+    </script>
+  </body>
+</html>
